@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="JavaScript.js"></script>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kanico</title>
+	<base href=".">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+	<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="kanico/layout.css">
+	<link rel="manifest" href="kanico/site.webmanifest">
+	<link rel="mask-icon" href="kanico/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Favicons -->
+	<link type="image/png" sizes="16x16" rel="icon" href="icons/favicon-16x16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="icons/favicon-32x32.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="./favicon-96x96.png">
+	<link type="image/png" sizes="120x120" rel="icon" href="./favicon-120x120.png">
+	<!-- Иконки для Android -->
+	<link type="image/png" sizes="72x72" rel="icon" href="icons/android-icon-72x72.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="icons/android-icon-96x96.png">
+	<link type="image/png" sizes="144x144" rel="icon" href="icons/android-icon-144x144.png">
+	<link type="image/png" sizes="192x192" rel="icon" href="icons/android-icon-192x192.png">
+	<link type="image/png" sizes="512x512" rel="icon" href="icons/android-icon-512x512.png">
+	<link rel="manifest" href="./manifest.json">
+	<!-- Иконки для iOS (Apple) -->
+	<link sizes="57x57" rel="apple-touch-icon" href="icons/apple-touch-icon-57x57.png">
+	<link sizes="60x60" rel="apple-touch-icon" href="icons/apple-touch-icon-60x60.png">
+	<link sizes="72x72" rel="apple-touch-icon" href="icons/apple-touch-icon-72x72.png">
+	<link sizes="76x76" rel="apple-touch-icon" href="icons/apple-touch-icon-76x76.png">
+	<link sizes="114x114" rel="apple-touch-icon" href="icons/apple-touch-icon-114x114.png">
+	<link sizes="120x120" rel="apple-touch-icon" href="icons/apple-touch-icon-120x120.png">
+	<link sizes="144x144" rel="apple-touch-icon" href="icons/apple-touch-icon-144x144.png">
+	<link sizes="152x152" rel="apple-touch-icon" href="icons/apple-touch-icon-152x152.png">
+	<link sizes="180x180" rel="apple-touch-icon" href="icons/apple-touch-icon-180x180.png">
+</head>
+<body>
+	<img class="muzhik" src="muzhik.png" alt="muzhik">
+	<img class="tyan"src="tyan.png" alt="tyan">
+<div class="main">
+    <div class="head">
+	<header>
+    <!-- Верхняя панель -->
+    <div class="tab"> <button class="tablinks" onclick="openCity(event, 'One')">Одиночки</button> 
+    <button class="tablinks" onclick="openCity(event, 'Two')">Парные</button>
+    <button class="tablinks" onclick="openCity(event, 'Three')">Групповые</button>
+ <!--<button class="tablinks" onclick="openCity(event, 'Four')">07 Групп 1-2</button>
+    <button class="tablinks" onclick="openCity(event, 'Five')">12 Один 2-1</button>
+    <button class="tablinks" onclick="openCity(event, 'Six')">13 Групп 2-1</button>
+	<button class="tablinks" onclick="openCity(event, 'Seven')">15 Один 2-2</button>
+	<button class="tablinks" onclick="openCity(event, 'Eight')">16 Групп 2-2</button>
+    <button class="tablinks" onclick="openCity(event, 'Nine')">20 Один 3-1</button>
+    <button class="tablinks" onclick="openCity(event, 'Ten')">21 Групп 3-1</button>
+	<button class="tablinks" onclick="openCity(event, 'Eleven')">23 Один 3-2</button>
+    <button class="tablinks" onclick="openCity(event, 'Tvelve')">24 Групп 3-2</button>
+    <button class="tablinks" onclick="openCity(event, 'Thirteen')">CoverDance</button>
+	<button class="tablinks"><a href="map.jpg" class="lightzoom">Карта ДК</a></button>-->
+    <button class="tablinks" onclick="openCity(event, 'table')">Расписание</button> 
+	<button class="tablinks" onclick="openCity(event, 'red')">Итог</button>
+    </div></div>
+ <!--   <table id="dataTable" class="table_blur" id="table">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Костюм</th>
+				<th>Похожесть</th>
+				<th>Выход</th>
+				<th>Комментарий</th>
+				<th>Итог</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Данные будут заполнены автоматически -->
+            <!-- Используйте местоимения ${} для вставки значений -->
+       <!-- </tbody>
+    </table>-->
+<!-- <button class="accordion">Хикару</button> <div class="panel"> <div class="card"> <a href="card/Hikaru.jpg" class="lightzoom"><img src="sCard/Hikaru.jpg" /></a> </div> </div> --> 
+<!-- Вкладка 1 -->
+<div id="One" class="tabcontent"><h3>11:30 СМОТР Одиночное дефиле 1й блок - 1 часть</h3>
+	<button class="accordion">03-02	rei - rei - identity v - Emil (patient) (Уфа)</button> <div class = "panel">  <a href="card/03-02.jpg" class = "lightzoom"> <img src = "sCard/03-02.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB2" data-column="B" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC2" data-column="C" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD2" data-column="D" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE2" data-column="E" data-row="2"></textarea></div>
+    </div></div></div>
+	</div>
+	<button class="accordion">03-03	Junka - Resident Evil Village - Кассандра Димитреску (Уфа)</button> <div class = "panel">  <a href="card/03-03.jpg" class = "lightzoom"> <img src = "sCard/03-03.jpg"/></a>
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB3" data-column="B" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC3" data-column="C" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD3" data-column="D" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE3" data-column="E" data-row="3"></textarea></div>
+    </div></div></div>
+	</div>
+	<button class="accordion">03-04	chokopayechka - Genshin Impact - Gui Zhong (Уфа)</button> <div class = "panel">  <a href="card/03-04.jpg" class = "lightzoom"> <img src = "sCard/03-04.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB4" data-column="B" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC4" data-column="C" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD4" data-column="D" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE4" data-column="E" data-row="4"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-05	Koruii - Genshin Impact - fem!Pantalone (Пермь)</button> <div class = "panel">  <a href="card/03-05.jpg" class = "lightzoom"> <img src = "sCard/03-05.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB5" data-column="B" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC5" data-column="C" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD5" data-column="D" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE5" data-column="E" data-row="5"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-06	Yuki_San - Silent Hill - Pyramid Head (Салават)</button> <div class = "panel">  <a href="card/03-06.jpg" class = "lightzoom"> <img src = "sCard/03-06.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB6" data-column="B" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC6" data-column="C" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD6" data-column="D" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE6" data-column="E" data-row="6"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-07	Jacket - DC Comics - Damian Wayne (Robin) (Чебоксары)</button> <div class = "panel">  <a href="card/03-07.jpg" class = "lightzoom"> <img src = "sCard/03-07.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB7" data-column="B" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC7" data-column="C" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD7" data-column="D" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE7" data-column="E" data-row="7"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-08	Карась - My little pony - Пинки Пай (Уфа)</button> <div class = "panel">  <a href="card/03-08.jpg" class = "lightzoom"> <img src = "sCard/03-08.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB8" data-column="B" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC8" data-column="C" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD8" data-column="D" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE8" data-column="E" data-row="8"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-09	эчпочмак - Хоббит: нежданное путешествие - Трандуил (Уфа)</button> <div class = "panel">  <a href="card/03-09.jpg" class = "lightzoom"> <img src = "sCard/03-09.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB9" data-column="B" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC9" data-column="C" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD9" data-column="D" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE9" data-column="E" data-row="9"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-10	The Usurper - Hazbin Hotel - Валентино (Туймазы)</button> <div class = "panel">  <a href="card/03-10.jpg" class = "lightzoom"> <img src = "sCard/03-10.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB10" data-column="B" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC10" data-column="C" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD10" data-column="D" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE10" data-column="E" data-row="10"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">03-11	Nao - Hazbin Hotel - Люцифер (Уфа)</button> <div class = "panel">  <a href="card/03-11.jpg" class = "lightzoom"> <img src = "sCard/03-11.jpg"/></a> 
+	<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB11" data-column="B" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC11" data-column="C" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD11" data-column="D" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE11" data-column="E" data-row="11"></textarea></div>
+    </div></div></div></div>
+</div>
+<!-- Вкладка 2 -->
+<div id="Two" class="tabcontent"><h3>11:30 СМОТР Малое и групповое дефиле 1й блок - 1 часть</h3>
+	<button class="accordion">04-01	Французские булочки - Identity V - Кровавая Мэри, Джозеф Дезольнье (Екатеринбург)</button> <div class = "panel">  <a href="card/04-01.jpg" class = "lightzoom"> <img src = "sCard/04-01.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB12" data-column="B" data-row="12">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC12" data-column="C" data-row="12">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD12" data-column="D" data-row="12">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE12" data-column="E" data-row="12"></textarea></div>
+    </div></div></div>
+	</div>
+	<button class="accordion">04-02	Аморальная поддержка: Sushka, Cyan - Genshin impact - Ху Тао, Син Цю(Уфа)</button> <div class = "panel">  <a href="card/04-02.jpg" class = "lightzoom"> <img src = "sCard/04-02.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB13" data-column="B" data-row="13">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC13" data-column="C" data-row="13">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD13" data-column="D" data-row="13">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE13" data-column="E" data-row="13"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">04-03	DNC - Dark Cyber - Биба и Боба (Магнитогорск)</button> <div class = "panel">  <a href="card/04-03.jpg" class = "lightzoom"> <img src = "sCard/04-03.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB14" data-column="B" data-row="14">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC14" data-column="C" data-row="14">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD14" data-column="D" data-row="14">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE14" data-column="E" data-row="14"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">04-04	Veliona,JuniferLof - My Little Pony - Fluttershy, Pinkie Pie (Уфа)</button> <div class = "panel">  <a href="card/04-04.jpg" class = "lightzoom"> <img src = "sCard/04-04.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB15" data-column="B" data-row="15">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC15" data-column="C" data-row="15">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD15" data-column="D" data-row="15">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE15" data-column="E" data-row="15"></textarea></div>
+    </div></div></div></div>
+	<button class="accordion">04-05	Ночные твари - Castlevania (Netflix TV) - Alucard Tepes, Lisa Tepes, Sypha Belnades, Trevor Belmont (Уфа)</button> <div class = "panel">  <a href="card/04-05.jpg" class = "lightzoom"> <img src = "sCard/04-05.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB16" data-column="B" data-row="16">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC16" data-column="C" data-row="16">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD16" data-column="D" data-row="16">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE16" data-column="E" data-row="16"></textarea></div>
+    </div></div></div></div>
+</div>
+<!-- Вкладка 3 -->
+<div id="Three" class="tabcontent"><h3>13:20 СМОТР Одиночное дефиле 1й блок - 2 часть</h3>
+<button class="accordion">06-01	Fun4 - Hellsing Ultimate - Вампир Alucard (Москва)</button> <div class = "panel">  <a href="card/06-01.jpg" class = "lightzoom"> <img src = "sCard/06-01.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB17" data-column="B" data-row="17">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC17" data-column="C" data-row="17">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD17" data-column="D" data-row="17">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE17" data-column="E" data-row="17"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-02	LOWELL - Paradox Live - Nayuta Yatonokami (Новокуйбышевск)</button> <div class = "panel">  <a href="card/06-02.jpg" class = "lightzoom"> <img src = "sCard/06-02.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB18" data-column="B" data-row="18">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC18" data-column="C" data-row="18">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD18" data-column="D" data-row="18">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE18" data-column="E" data-row="18"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-03	Ball ghost - Mo Dao Zu Shi - Бася (Екатеринбург)</button> <div class = "panel">  <a href="card/06-03.jpg" class = "lightzoom"> <img src = "sCard/06-03.jpg"/></a> <div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB19" data-column="B" data-row="19">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC19" data-column="C" data-row="19">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD19" data-column="D" data-row="19">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE19" data-column="E" data-row="19"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-04	Канифоль - Добро пожаловать в ад Ирума-кун - Элизабетт Икс (Уфа)</button> <div class = "panel">  <a href="card/06-04.jpg" class = "lightzoom"> <img src = "sCard/06-04.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB20" data-column="B" data-row="20">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC20" data-column="C" data-row="20">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD20" data-column="D" data-row="20">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE20" data-column="E" data-row="20"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-05	Nora Kim - Cardfight!! Vanguard - Dream-spinning Ranunculus, Ahsha (Уфа)</button> <div class = "panel">  <a href="card/06-05.jpg" class = "lightzoom"> <img src = "sCard/06-05.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB21" data-column="B" data-row="21">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC21" data-column="C" data-row="21">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD21" data-column="D" data-row="21">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE21" data-column="E" data-row="21"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-06	Inu - Immortal Soul: Black Survival - Киара (Казань)</button> <div class = "panel">  <a href="card/06-06.jpg" class = "lightzoom"> <img src = "sCard/06-06.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB22" data-column="B" data-row="22">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC22" data-column="C" data-row="22">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD22" data-column="D" data-row="22">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE22" data-column="E" data-row="22"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-07	Binderella - Dead by Daylight - Художница (Челябинск)</button> <div class = "panel">  <a href="card/06-07.jpg" class = "lightzoom"> <img src = "sCard/06-07.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB23" data-column="B" data-row="23">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC23" data-column="C" data-row="23">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD23" data-column="D" data-row="23">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE23" data-column="E" data-row="23"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-08	Meigara - Genshin Impact - Albedo (Самара)</button> <div class = "panel">  <a href="card/06-08.jpg" class = "lightzoom"> <img src = "sCard/06-08.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB24" data-column="B" data-row="24">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC24" data-column="C" data-row="24">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD24" data-column="D" data-row="24">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE24" data-column="E" data-row="24"></textarea></div>
+    </div></div></div></div>
+<button class="accordion">06-09	TsubakiFudzioka - Genshin Impact - Pyro Abyss Mage (Екатеринбург)</button> <div class = "panel">  <a href="card/06-09.jpg" class = "lightzoom"> <img src = "sCard/06-09.jpg"/></a> 
+<div id="inputFields">
+	<div><div class="input-row"> Костюм
+        <div><select class="data-input" class="input-field" id="dataB25" data-column="B" data-row="25">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Схожесть
+        <div><select class="data-input" class="input-field" id="dataC25" data-column="C" data-row="25">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+	<div><div class="input-row"> Выступление
+        <div><select class="data-input" class="input-field" id="dataD25" data-column="D" data-row="25">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+    </div></div>
+    <div><div class="input-row"> Комментарий<div>
+        <textarea type="text" class="data-input" class="input-field" id="dataE25" data-column="E" data-row="25"></textarea></div>
+    </div></div></div></div>
+</div>
+<!-- Вкладка 4 -->
+<!--<div id="Four" class="tabcontent"><h3>13:20 СМОТР  Малое и групповое дефиле 1й блок - 2 часть</h3>
+<button class="accordion">07-01	Татарский Шиппуден - Наруто - Наруто Удзумаки, Какаши Хатаке, Цунаде (Уфа)</button> <div class = "panel">  <a href="card/07-01.jpg" class = "lightzoom"> <img src = "sCard/07-01.jpg"/></a> </div>
+<button class="accordion">07-02	трое из made in China - Благословение небожителей - Собиратель цветов под кровавым дождем Хуа Чэн, Черная вода погибель кораблей Хэ Сюань, Несущий беду в белых одеяниях Безликий Бай (Уфа)</button> <div class = "panel">  <a href="card/07-02.jpg" class = "lightzoom"> <img src = "sCard/07-02.jpg"/></a> </div>
+<button class="accordion">07-03	Биба и Боба - Sailor Moon - Темная Леди, Мистресс 9 (Екатеринбург)</button> <div class = "panel">  <a href="card/07-03.jpg" class = "lightzoom"> <img src = "sCard/07-03.jpg"/></a> </div>
+<button class="accordion">07-04	Крабовый саботаж - Дисней - Белоснежка, Аврора (Пермь)</button> <div class = "panel">  <a href="card/07-04.jpg" class = "lightzoom"> <img src = "sCard/07-04.jpg"/></a> </div>
+<button class="accordion">07-05	Театр Теней - Ориджинал: вампирские хроники Викторианской эпохи - Сын-вампир Луи, мать-вампир Лилит, невинная дева Офелия (Екатеринбург)</button> <div class = "panel">  <a href="card/07-05.jpg" class = "lightzoom"> <img src = "sCard/07-05.jpg"/></a> </div>
+<button class="accordion">07-06	Всё ради игры. Петухи и собаки. - Книга ""Всё ради игры"" (Нора Сакавич) - Нил Джостен, Эндрю Миньярд, Рико Морияма, Жан Моро, Кевин Дэй, Аарон Миньярд, Рене Уокер, Николас Хэммик, Элисон Рейнолдс (Уфа, Стерлитамак.)</button> <div class = "panel">  <a href="card/07-06.jpg" class = "lightzoom"> <img src = "sCard/07-06.jpg"/></a> </div>
+<button class="accordion">07-07	Божественный Крысиный Совет - Магия и мускулы - Мэш, Финн, Тодд, Лемон, Ленс (Екатеринбург)</button> <div class = "panel">  <a href="card/07-07.jpg" class = "lightzoom"> <img src = "sCard/07-07.jpg"/></a> </div>
+</div>
+<!-- Вкладка 5 -->
+<!--<div id="Five" class="tabcontent"><h3>14:15 СМОТР Одиночное дефиле 2й блок - 1 часть</h3>
+<button class="accordion">12-01	Shiku - Sousou no Frieren - Frieren (Уфа)</button> <div class = "panel">  <a href="card/12-01.jpg" class = "lightzoom"> <img src = "sCard/12-01.jpg"/></a> </div>
+<button class="accordion">12-02	Мисако - Vocaloid - Hatsune Miku (Уфа)</button> <div class = "panel">  <a href="card/12-02.jpg" class = "lightzoom"> <img src = "sCard/12-02.jpg"/></a> </div>
+<button class="accordion">12-03	Риколлетти - Благословение Небожителей - Ши Цинсюань (Уфа)</button> <div class = "panel">  <a href="card/12-03.jpg" class = "lightzoom"> <img src = "sCard/12-03.jpg"/></a> </div>
+<button class="accordion">12-04	Shanmei - Звёздное дитя - Арима Кана (Уфа)</button> <div class = "panel">  <a href="card/12-04.jpg" class = "lightzoom"> <img src = "sCard/12-04.jpg"/></a> </div>
+<button class="accordion">12-05	pechenie - Vocaloid - Senbonzakura Rin (Стерлитамак)</button> <div class = "panel">  <a href="card/12-05.jpg" class = "lightzoom"> <img src = "sCard/12-05.jpg"/></a> </div>
+<button class="accordion">12-06	Reiz - Honkai: Star Rail - Яньцин (Уфа)</button> <div class = "panel">  <a href="card/12-06.jpg" class = "lightzoom"> <img src = "sCard/12-06.jpg"/></a> </div>
+<button class="accordion">12-07	Batsy - Honkai: Star Rail - Клара (Екатеринбург)</button> <div class = "panel">  <a href="card/12-07.jpg" class = "lightzoom"> <img src = "sCard/12-07.jpg"/></a> </div>
+<button class="accordion">12-08	Valli - Genshin Impact - Фокалорс (Пермь)</button> <div class = "panel">  <a href="card/12-08.jpg" class = "lightzoom"> <img src = "sCard/12-08.jpg"/></a> </div>
+<button class="accordion">12-09	Verukt - Genshin impact - Sangonomiya Kokomi (Уфа)</button> <div class = "panel">  <a href="card/12-09.jpg" class = "lightzoom"> <img src = "sCard/12-09.jpg"/></a> </div>
+<button class="accordion">12-10	Set Skandanest - Genshin impact - Zhongli (Новосибирск)</button> <div class = "panel">  <a href="card/12-10.jpg" class = "lightzoom"> <img src = "sCard/12-10.jpg"/></a> </div>
+<button class="accordion">12-11	Kenjik - Звёздные цветы - Барвинок (Екатеринбург)</button> <div class = "panel">  <a href="card/12-11.jpg" class = "lightzoom"> <img src = "sCard/12-11.jpg"/></a> </div>
+<button class="accordion">12-12	sterrzer - Dragon Nest - Black Mara (Ижевск)</button> <div class = "panel">  <a href="card/12-12.jpg" class = "lightzoom"> <img src = "sCard/12-12.jpg"/></a> </div>
+<button class="accordion">12-13	Evergreen_de_Bestia - Ориджинал - Вампир - Графиня Мак (Уфа)</button> <div class = "panel">  <a href="card/12-13.jpg" class = "lightzoom"> <img src = "sCard/12-13.jpg"/></a> </div>
+<button class="accordion">12-14	moon_pers - Невероятные приключения ДжоДжо - фем!Дио Брандо (Уфа)</button> <div class = "panel">  <a href="card/12-14.jpg" class = "lightzoom"> <img src = "sCard/12-14.jpg"/></a> </div>
+</div>
+<!-- Вкладка 6 -->
+<!--<div id="Six" class="tabcontent"><h3>14:15 СМОТР Малое и групповое дефиле 2й блок - 1 часть</h3>
+<button class="accordion">13-01	NeroYamato, Kyarov - JoJo’s Bizarre Adventure - Joseph Joestar, Lisa Lisa (Уфа)</button> <div class = "panel">  <a href="card/13-01.jpg" class = "lightzoom"> <img src = "sCard/13-01.jpg"/></a> </div>
+<button class="accordion">13-02	Dante, Mr.Oysen - Мультсериал ""Wunschpunsch"" - Бубоник, Тирания (Уфа, Чебоксары)</button> <div class = "panel">  <a href="card/13-02.jpg" class = "lightzoom"> <img src = "sCard/13-02.jpg"/></a> </div>
+<button class="accordion">13-03	Синнабон и Рыжий Змей - ""Good omens"" (""Благие знамения"") - Азирафель, Кроули (фем-версия) (Уфа)</button> <div class = "panel">  <a href="card/13-03.jpg" class = "lightzoom"> <img src = "sCard/13-03.jpg"/></a> </div>
+<button class="accordion">13-04	Вэри голд бьютифул вампиры - Дьявольские возлюбленные - Юи, Аято, Рейджи, Лайто, Канато, Шу (Уфа)</button> <div class = "panel">  <a href="card/13-04.jpg" class = "lightzoom"> <img src = "sCard/13-04.jpg"/></a> </div>
+</div>
+<!-- Вкладка 7  -->
+<!--<div id="Seven" class="tabcontent"><h3>15:50 СМОТР Одиночное дефиле 2й блок - 2 часть</h3>
+<button class="accordion">15-01	Fay - League of Legends - Briar (Пермь)</button> <div class = "panel">  <a href="card/15-01.jpg" class = "lightzoom"> <img src = "sCard/15-01.jpg"/></a> </div>
+<button class="accordion">15-02	KioretoSan - League of Legends - Muse Sona (Уфа)</button> <div class = "panel">  <a href="card/15-02.jpg" class = "lightzoom"> <img src = "sCard/15-02.jpg"/></a> </div>
+<button class="accordion">15-03	AnA - Baldur's Gate 3 - Астарион (Пенза)</button> <div class = "panel">  <a href="card/15-03.jpg" class = "lightzoom"> <img src = "sCard/15-03.jpg"/></a> </div>
+<button class="accordion">15-04	Rinoko - Snow White and the Seven Dwarfs - Snow White (Уфа)</button> <div class = "panel">  <a href="card/15-04.jpg" class = "lightzoom"> <img src = "sCard/15-04.jpg"/></a> </div>
+<button class="accordion">15-05	SHINIGAMka - Сериал ""Аватар: Легенда об Аанге"" - Суюки, воин Киоши (Соликамск)</button> <div class = "panel">  <a href="card/15-05.jpg" class = "lightzoom"> <img src = "sCard/15-05.jpg"/></a> </div>
+<button class="accordion">15-06	Kvoni Min - Ориджинал по вселенной Алисы в стране чудес - Белая Роза (Уфа)</button> <div class = "panel">  <a href="card/15-06.jpg" class = "lightzoom"> <img src = "sCard/15-06.jpg"/></a> </div>
+</div>
+<!-- Вкладка 8  -->
+<!--<div id="Eight" class="tabcontent"><h3> 15:50 СМОТР Малое и групповое дефиле 2й блок - 2 часть</h3>
+<button class="accordion">16-01	harat, мама Аникоса - Очень приятно Бог - Томоэ,Нанами (Уфа)</button> <div class = "panel">  <a href="card/16-01.jpg" class = "lightzoom"> <img src = "sCard/16-01.jpg"/></a> </div>
+<button class="accordion">16-02	Лис Укурыш, Radioactive Daddy - The Elder Scrolls V:Skyrim - Довакин, Мирак (Челябинск)</button> <div class = "panel">  <a href="card/16-02.jpg" class = "lightzoom"> <img src = "sCard/16-02.jpg"/></a> </div>
+<button class="accordion">16-03	Юма, Хлопок - Геншин импакт - Дотторе, Колумбина (Уфа)</button> <div class = "panel">  <a href="card/16-03.jpg" class = "lightzoom"> <img src = "sCard/16-03.jpg"/></a> </div>
+<button class="accordion">16-04	Потешные хтони - Arknights - Irene, Lumen, Specter the Unchained (Уфа, Ижевск, Казань)</button> <div class = "panel">  <a href="card/16-04.jpg" class = "lightzoom"> <img src = "sCard/16-04.jpg"/></a> </div>
+<button class="accordion">16-05	Polina Chrome, Mikkel - Resident Evil 4 Remake - Ada Wong, Leon Scott Kennedy (Уфа)</button> <div class = "panel">  <a href="card/16-05.jpg" class = "lightzoom"> <img src = "sCard/16-05.jpg"/></a> </div>
+<button class="accordion">16-06	mariamiaou & Renton Torston - One-Punch Man - Tatsumaki, Fubuki (Пермь)</button> <div class = "panel">  <a href="card/16-06.jpg" class = "lightzoom"> <img src = "sCard/16-06.jpg"/></a> </div>
+<button class="accordion">16-07	Собрание высших лун - Клинок, рассекающий демонов - Кибусуджи Мудзан, Накиме, Кокушибо, Доума, Аказа, Хонтенгу, Гекко, Гютаро, Даки (Уфа, Набережные челны, Челябинск)</button> <div class = "panel">  <a href="card/16-07.jpg" class = "lightzoom"> <img src = "sCard/16-07.jpg"/></a> </div>
+<button class="accordion">16-08	Суета в столовке - My little pony - Рарити, Флаттершай, Эпл Джек, Пинки Пай, Радуга Дэш, Сумеречная Искорка (Уфа)</button> <div class = "panel">  <a href="card/16-08.jpg" class = "lightzoom"> <img src = "sCard/16-08.jpg"/></a> </div>
+</div>
+<!-- Вкладка 9 -->
+<!--<div id="Nine" class="tabcontent"><h3>17:05 СМОТР Одиночное дефиле 3й блок - 1 часть</h3>
+<button class="accordion">20-01	Dary - Food Fantasy - Red Wine (Ульяновск)</button> <div class = "panel">  <a href="card/20-01.jpg" class = "lightzoom"> <img src = "sCard/20-01.jpg"/></a> </div>
+<button class="accordion">20-02	Жоски Кичи - Project sekai - Emu Otori (Уфа)</button> <div class = "panel">  <a href="card/20-02.jpg" class = "lightzoom"> <img src = "sCard/20-02.jpg"/></a> </div>
+<button class="accordion">20-03	BlakEva - Reverse Falls (Gravity Falls) - Mabel Gleeful (Mabel Pines) (Уфа)</button> <div class = "panel">  <a href="card/20-03.jpg" class = "lightzoom"> <img src = "sCard/20-03.jpg"/></a> </div>
+<button class="accordion">20-04	Biomega - Дорама ""Благой Лотосовый Терем"" - Ли Сяньи (Екатеринбург)</button> <div class = "panel">  <a href="card/20-04.jpg" class = "lightzoom"> <img src = "sCard/20-04.jpg"/></a> </div>
+<button class="accordion">20-05	Coraline.Winter - Сказка о сахарном яблоке - Бриджит Пейдж (Уфа)</button> <div class = "panel">  <a href="card/20-05.jpg" class = "lightzoom"> <img src = "sCard/20-05.jpg"/></a> </div>
+<button class="accordion">20-06	Yukine - Магическая битва - Маки Зенин (Уфа)</button> <div class = "panel">  <a href="card/20-06.jpg" class = "lightzoom"> <img src = "sCard/20-06.jpg"/></a> </div>
+<button class="accordion">20-07	Eclipse - Hellsing Ultimate - Майор Монтана (Уфа)</button> <div class = "panel">  <a href="card/20-07.jpg" class = "lightzoom"> <img src = "sCard/20-07.jpg"/></a> </div>
+<button class="accordion">20-08	Levian - Основатель Темного Пути - Юй Цзыюань (Пермь)</button> <div class = "panel">  <a href="card/20-08.jpg" class = "lightzoom"> <img src = "sCard/20-08.jpg"/></a> </div>
+<button class="accordion">20-09	Хомяк умер от кринжа - Vocaloid - Hatsune Miku (Челябинск)</button> <div class = "panel">  <a href="card/20-09.jpg" class = "lightzoom"> <img src = "sCard/20-09.jpg"/></a> </div>
+<button class="accordion">20-10	Staaaaaaaaaaark - One Piece - Сэр Крокодайл (Челябинск)</button> <div class = "panel">  <a href="card/20-10.jpg" class = "lightzoom"> <img src = "sCard/20-10.jpg"/></a> </div>
+</div>
+<!-- Вкладка 10 -->
+<!--<div id="Ten" class="tabcontent"><h3>17:05 СМОТР Малое и групповое дефиле 3й блок - 1 часть</h3>
+<button class="accordion">21-01	Кица, Mami - Evangelion OVA - Аска Лэнгли, Мари Макинами (Уфа)</button> <div class = "panel">  <a href="card/21-01.jpg" class = "lightzoom"> <img src = "sCard/21-01.jpg"/></a> </div>
+<button class="accordion">21-04	It's Fine - Hikikomari Kyuuketsuki no Monmon - Теракомари Гандесблад, Вилзейз (Уфа)</button> <div class = "panel">  <a href="card/21-04.jpg" class = "lightzoom"> <img src = "sCard/21-04.jpg"/></a> </div>
+<button class="accordion">21-05	Principle F - Paradox Live - Kanata Yatonokami, Nayuta Yatonokami (Самара, Новокуйбышевск)</button> <div class = "panel">  <a href="card/21-05.jpg" class = "lightzoom"> <img src = "sCard/21-05.jpg"/></a> </div>
+<button class="accordion">21-07	Mako, ContraMundi - Castlevania: Lament of Innocence - Leon Belmont, Mathias Cronqvist (Москва)</button> <div class = "panel">  <a href="card/21-07.jpg" class = "lightzoom"> <img src = "sCard/21-07.jpg"/></a> </div>
+</div>
+<!-- Вкладка 11 -->
+<!--<div id="Eleven" class="tabcontent"><h3>18:25 СМОТР Одиночное дефиле 3й блок - 2 часть</h3>
+<button class="accordion">23-01	Shafran - Hazbin Hotel - Angel Dust (Уфа)</button> <div class = "panel">  <a href="card/23-01.jpg" class = "lightzoom"> <img src = "sCard/23-01.jpg"/></a> </div>
+<button class="accordion">23-02	Koruii - Hazbin Hotel - Lute (Пермь)</button> <div class = "panel">  <a href="card/23-02.jpg" class = "lightzoom"> <img src = "sCard/23-02.jpg"/></a> </div>
+<button class="accordion">23-04	The Usurper - Джордж Р. Р. Мартин — ""Пламя и Кровь"" - Эйгон II Таргариен (Туймазы)</button> <div class = "panel">  <a href="card/23-04.jpg" class = "lightzoom"> <img src = "sCard/23-04.jpg"/></a> </div>
+<button class="accordion">23-05	Хоррор на Юнити - Genshin Impact - Lynette (Уфа)</button> <div class = "panel">  <a href="card/23-05.jpg" class = "lightzoom"> <img src = "sCard/23-05.jpg"/></a> </div>
+<button class="accordion">23-06	Gracia - Genshin Impact - Monsieur Neuvillette (Уфа)</button> <div class = "panel">  <a href="card/23-06.jpg" class = "lightzoom"> <img src = "sCard/23-06.jpg"/></a> </div>
+<button class="accordion">23-07	Лама - Клинок рассекающий демонов - Незуко (Уфа)</button> <div class = "panel">  <a href="card/23-07.jpg" class = "lightzoom"> <img src = "sCard/23-07.jpg"/></a> </div>
+<button class="accordion">23-08	Неясыть - Bleach - Kurotsuchi Mayuri (Уфа)</button> <div class = "panel">  <a href="card/23-08.jpg" class = "lightzoom"> <img src = "sCard/23-08.jpg"/></a> </div>
+<button class="accordion">23-09	phantom - Тёмный Дворецкий - Элизабет Мидфорд (Уфа)</button> <div class = "panel">  <a href="card/23-09.jpg" class = "lightzoom"> <img src = "sCard/23-09.jpg"/></a> </div>
+<button class="accordion">23-10	Выбравшая тьму - Sakizo art - Necormancer Julietta (Уфа)</button> <div class = "panel">  <a href="card/23-10.jpg" class = "lightzoom"> <img src = "sCard/23-10.jpg"/></a> </div>
+</div>
+<!-- Вкладка 12 -->
+<!--<div id="Tvelve" class="tabcontent"><h3>18:25 СМОТР Малое и групповое дефиле 3й блок - 2 часть</h3>
+<button class="accordion">24-01	Ochpochmak from Yuki - The Demon Slayеr - Nezuko, Zenitsu (Салават, Уфа)</button> <div class = "panel">  <a href="card/24-01.jpg" class = "lightzoom"> <img src = "sCard/24-01.jpg"/></a> </div>
+<button class="accordion">24-02	Хор Зайчат - Homestuck - Jade Harley, Dave Strider (Уфа)</button> <div class = "panel">  <a href="card/24-02.jpg" class = "lightzoom"> <img src = "sCard/24-02.jpg"/></a> </div>
+<button class="accordion">24-03	ФантаСтики - Мрачные тени (к/ф 2012) - Анжелика Бушар, Барнабас Коллинз (Челябинск)</button> <div class = "panel">  <a href="card/24-03.jpg" class = "lightzoom"> <img src = "sCard/24-03.jpg"/></a> </div>
+<button class="accordion">24-04	Видит Архонт, мы не хотели! - Genshin Impact - Люмин, Лиза, Розария, Венти, Сахароза, Беннет, Эмбер, Дилюк, Кэйя, Ноэль, Барбара (Уфа, Стерлитамак, Новосибирск)</button> <div class = "panel">  <a href="card/24-04.jpg" class = "lightzoom"> <img src = "sCard/24-04.jpg"/></a> </div>
+<button class="accordion">24-05	Рожденные хаосом - Интервью с вампиром, Королева проклятых, Чем мы заняты в тени, Выживут только любовники, Бал вампиров, Дракула - Лестат де Лионкур, Акаша, Владислав Колосажатель, Ева, Сара Шагал, Владислав Дракула (Екатеринбург)</button> <div class = "panel">  <a href="card/24-05.jpg" class = "lightzoom"> <img src = "sCard/24-05.jpg"/></a> </div>
+</div>
+<!-- Вкладка 13 -->
+<!--<div id="Thirteen" class="tabcontent"><h3>CoverDance</h3>
+<button class="accordion">02-01	CELESTIAL - Kepler - LVLY (Уфа)</button> <div class = "panel">  <a href="card/02-01.jpg" class = "lightzoom"> <img src = "sCard/02-01.jpg"/></a> </div>
+<button class="accordion">02-03	Ice Cream - Магистр тёмного пути - Забыть о сожалениях (Стерлитамак)</button> <div class = "panel">  <a href="card/02-03.jpg" class = "lightzoom"> <img src = "sCard/02-03.jpg"/></a> </div>
+<button class="accordion">05-02	ENLIVEN - Treasure - JIKJIN (Ижевск)</button> <div class = "panel">  <a href="card/05-02.jpg" class = "lightzoom"> <img src = "sCard/05-02.jpg"/></a> </div>
+<button class="accordion">05-03	N_Jay - Dreamcatcher - Good night (Уфа)</button> <div class = "panel">  <a href="card/05-03.jpg" class = "lightzoom"> <img src = "sCard/05-03.jpg"/></a> </div>
+<button class="accordion">05-04	GOTTA MOVE feat O.M.G & K-POP UFA FANDO M- ATEEZ - CRAZY FORM (Уфа)</button> <div class = "panel">  <a href="card/05-04.jpg" class = "lightzoom"> <img src = "sCard/05-04.jpg"/></a> </div>
+<button class="accordion">08-02	WHIPLASH - SOMI - FAST FORWARD (Пермь)</button> <div class = "panel">  <a href="card/08-02.jpg" class = "lightzoom"> <img src = "sCard/08-02.jpg"/></a> </div>
+<button class="accordion">08-03	КИТРИ - Green Apelsin - Труп невесты (Уфа)</button> <div class = "panel">  <a href="card/08-03.jpg" class = "lightzoom"> <img src = "sCard/08-03.jpg"/></a> </div>
+<button class="accordion">08-04	VEELA ft. CNP Team - Aespa - Drama (Уфа)</button> <div class = "panel">  <a href="card/08-04.jpg" class = "lightzoom"> <img src = "sCard/08-04.jpg"/></a> </div>
+<button class="accordion">10-01	MEI SHU - P1Harmony - Killin' It (Стерлитамак)</button> <div class = "panel">  <a href="card/10-01.jpg" class = "lightzoom"> <img src = "sCard/10-01.jpg"/></a> </div>
+<button class="accordion">10-03	ENLIVEN - NCT 127 - Fact Check (Ижевск)</button> <div class = "panel">  <a href="card/10-03.jpg" class = "lightzoom"> <img src = "sCard/10-03.jpg"/></a> </div>
+<button class="accordion">10-04	ZipZip - NCT 127-Kick It (Уфа)</button> <div class = "panel">  <a href="card/10-04.jpg" class = "lightzoom"> <img src = "sCard/10-04.jpg"/></a> </div>
+<button class="accordion">10-05	BlueredPride - Endless Possibility (Sonic Unleashed) (Санкт-Петербург)</button> <div class = "panel">  <a href="card/10-05.jpg" class = "lightzoom"> <img src = "sCard/10-05.jpg"/></a> </div>
+<button class="accordion">14-01	Coffee Glass feat O.M.G - Omega X - Love me like (Уфа)</button> <div class = "panel">  <a href="card/14-01.jpg" class = "lightzoom"> <img src = "sCard/14-01.jpg"/></a> </div>
+<button class="accordion">14-02	Asphodel - Itzy - Untouchable (Ижевск)</button> <div class = "panel">  <a href="card/14-02.jpg" class = "lightzoom"> <img src = "sCard/14-02.jpg"/></a> </div>
+<button class="accordion">14-03	YBN feat. KIDERO - Purple Kiss — Sweet Juice (Уфа)</button> <div class = "panel">  <a href="card/14-03.jpg" class = "lightzoom"> <img src = "sCard/14-03.jpg"/></a> </div>
+<button class="accordion">17-01	WHIPLASH - VIXX - FANTASY (Пермь)</button> <div class = "panel">  <a href="card/17-01.jpg" class = "lightzoom"> <img src = "sCard/17-01.jpg"/></a> </div>
+<button class="accordion">17-02	BLACK MOON - NCT DREAM - ISTJ (Набережные Челны)</button> <div class = "panel">  <a href="card/17-02.jpg" class = "lightzoom"> <img src = "sCard/17-02.jpg"/></a> </div>
+<button class="accordion">17-04	GO CRAZY! - Intro+Everglow-La Di Da (Стерлитамак)</button> <div class = "panel">  <a href="card/17-04.jpg" class = "lightzoom"> <img src = "sCard/17-04.jpg"/></a> </div>
+<button class="accordion">17-05	Cloud Nine - PURPLE KISS - Sweet Juice (Уфа)</button> <div class = "panel">  <a href="card/17-05.jpg" class = "lightzoom"> <img src = "sCard/17-05.jpg"/></a> </div>
+<button class="accordion">17-06	QUINTESSENCE feat. X1 - (G)I-DLE - Super Lady (Уфа)</button> <div class = "panel">  <a href="card/17-06.jpg" class = "lightzoom"> <img src = "sCard/17-06.jpg"/></a> </div>
+<button class="accordion">19-01	Milkshake - Itzy - Untouchable (Уфа)</button> <div class = "panel">  <a href="card/19-01.jpg" class = "lightzoom"> <img src = "sCard/19-01.jpg"/></a> </div>
+<button class="accordion">19-02	2TERNITY - STRAY KIDS - EASY (Ижевск)</button> <div class = "panel">  <a href="card/19-02.jpg" class = "lightzoom"> <img src = "sCard/19-02.jpg"/></a> </div>
+<button class="accordion">19-03	Gotta Move - Pixy - Addicted (Уфа)</button> <div class = "panel">  <a href="card/19-03.jpg" class = "lightzoom"> <img src = "sCard/19-03.jpg"/></a> </div>
+<button class="accordion">19-05	BAEby - 8TURN - EXCEL (Пермь)</button> <div class = "panel">  <a href="card/19-05.jpg" class = "lightzoom"> <img src = "sCard/19-05.jpg"/></a> </div>
+<button class="accordion">22-01	WHITE NIGHT - XG - Shooting star (Уфа)</button> <div class = "panel">  <a href="card/22-01.jpg" class = "lightzoom"> <img src = "sCard/22-01.jpg"/></a> </div>
+<button class="accordion">22-02	MBL(MaturBoysLar) - NCT U-Baggy Jeans (Уфа)</button> <div class = "panel">  <a href="card/22-02.jpg" class = "lightzoom"> <img src = "sCard/22-02.jpg"/></a> </div>
+<button class="accordion">22-03	X1 - NCT127 - Favorite (Vampire) (Уфа)</button> <div class = "panel">  <a href="card/22-03.jpg" class = "lightzoom"> <img src = "sCard/22-03.jpg"/></a> </div>
+<button class="accordion">25-01	TheMUSES Project - Dreamcatcher - Vision (Уфа)</button> <div class = "panel">  <a href="card/25-01.jpg" class = "lightzoom"> <img src = "sCard/25-01.jpg"/></a> </div>
+<button class="accordion">25-02	Sugarboo - XG-GRL GVNG (Ижевск, Казань)</button> <div class = "panel">  <a href="card/25-02.jpg" class = "lightzoom"> <img src = "sCard/25-02.jpg"/></a> </div>
+<button class="accordion">25-03	Cloud Nine Family - Dreamcatcher - BOCA (Уфа)</button> <div class = "panel">  <a href="card/25-03.jpg" class = "lightzoom"> <img src = "sCard/25-03.jpg"/></a> </div>
+<button class="accordion">25-05	The T.O.P. dance school - Kepler - LVLY (Уфа)</button> <div class = "panel">  <a href="card/25-05.jpg" class = "lightzoom"> <img src = "sCard/25-05.jpg"/></a> </div>
+<button class="accordion">27-01	ВНЕКОНКУРС F.L.P. - Jimin - Set me free (Уфа)</button> <div class = "panel">  <a href="card/27-01.jpg" class = "lightzoom"> <img src = "sCard/27-01.jpg"/></a> </div>
+<button class="accordion">29-01	ВНЕКОНКУРС Twinkie - (G)I-dle- nxde (Уфа)</button> <div class = "panel">  <a href="card/29-01.jpg" class = "lightzoom"> <img src = "sCard/29-01.jpg"/></a> </div>
+<button class="accordion">29-03	ВНЕКОНКУРС A.T.I - Enhypen given-Taken (Уфа)</button> <div class = "panel">  <a href="card/29-03.jpg" class = "lightzoom"> <img src = "sCard/29-03.jpg"/></a> </div>
+<button class="accordion">29-05	ВНЕКОНКУРС Fluffster - Stayc-Beautiful monster (Ижевск)</button> <div class = "panel">  <a href="card/29-05.jpg" class = "lightzoom"> <img src = "sCard/29-05.jpg"/></a> </div>
+<button class="accordion">29-06	ВНЕКОНКУРС FTS - LE SSERAFIM - ANTIFRAGILE (Уфа) </button> <div class = "panel">  <a href="card/29-06.jpg" class = "lightzoom"> <img src = "sCard/29-06.jpg"/></a> </div>
+<button class="accordion">29-07	ВНЕКОНКУРС FrontRow project - Aespa - Illusion (Уфа)</button> <div class = "panel">  <a href="card/29-07.jpg" class = "lightzoom"> <img src = "sCard/29-07.jpg"/></a> </div>
+</div>
+
+
+<!--  Таблица -->
+<div id="table" class="tabcontent">
+<table class="table_blur">
+<tr>
+<th colspan="2" class="block">1-ый блок</th></tr>
+<th colspan="2" class="smort">11:30 СМОТР Косплей-дефиле 1й блок - 1</th></tr>
+    <tr class="B"><td>12:00</td><td>Открытие</td></tr>
+    <tr class="B"><td>12:15</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/02-01.jpg" class = "lightzoom">02-01</a></td><td>CELESTIAL - Kepler - LVLY (Уфа)</td></tr>
+	<tr><td>02-02</td><td>Saya - «Лики войны»: Джайна (Уфа)</td></tr>
+	<tr><td><a href="card/02-03.jpg" class = "lightzoom">02-03</a></td><td>Ice Cream - Магистр тёмного пути - Забыть о сожалениях (Стерлитамак)</td></tr>
+<tr class="B"><td>12:25</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/03-02.jpg" class = "lightzoom">03-02</a></td><td>rei - rei - identity v - Emil (patient) (Уфа)</td></tr>
+	<tr><td><a href="card/03-03.jpg" class = "lightzoom">03-03</a></td><td>Junka - Resident Evil Village - Кассандра Димитреску (Уфа)</td></tr>
+	<tr><td><a href="card/03-04.jpg" class = "lightzoom">03-04</a></td><td>chokopayechka - Genshin Impact - Gui Zhong (Уфа)</td></tr>
+	<tr><td><a href="card/03-05.jpg" class = "lightzoom">03-05</a></td><td>Koruii - Genshin Impact - fem!Pantalone (Пермь)</td></tr>
+	<tr><td><a href="card/03-06.jpg" class = "lightzoom">03-06</a></td><td>Yuki_San - Silent Hill - Pyramid Head (Салават)</td></tr>
+	<tr><td><a href="card/03-07.jpg" class = "lightzoom">03-07</a></td><td>Jacket - DC Comics - Damian Wayne (Robin) (Чебоксары)</td></tr>
+	<tr><td><a href="card/03-08.jpg" class = "lightzoom">03-08</a></td><td>Карась - My little pony - Пинки Пай (Уфа)</td></tr>
+	<tr><td><a href="card/03-09.jpg" class = "lightzoom">03-09</a></td><td>эчпочмак - Хоббит: нежданное путешествие - Трандуил (Уфа)</td></tr>
+	<tr><td><a href="card/03-10.jpg" class = "lightzoom">03-10</a></td><td>The Usurper - Hazbin Hotel - Валентино (Туймазы)</td></tr>
+	<tr><td><a href="card/03-11.jpg" class = "lightzoom">03-11</a></td><td>Nao - Hazbin Hotel - Люцифер (Уфа)</td></tr>
+<tr class="B"><td>12:35</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/04-01.jpg" class = "lightzoom">04-01</a></td><td>Французские булочки - Identity V - Кровавая Мэри, Джозеф Дезольнье (Екатеринбург)</td></tr>
+	<tr><td><a href="card/04-02.jpg" class = "lightzoom">04-02</a></td><td>Аморальная поддержка: Sushka, Cyan - Genshin impact - Ху Тао, Син Цю(Уфа)</td></tr>
+	<tr><td><a href="card/04-03.jpg" class = "lightzoom">04-03</a></td><td>DNC - Dark Cyber - Биба и Боба (Магнитогорск)</td></tr>
+	<tr><td><a href="card/04-04.jpg" class = "lightzoom">04-04</a></td><td>Veliona,JuniferLof - My Little Pony - Fluttershy, Pinkie Pie (Уфа)</td></tr>
+	<tr><td><a href="card/04-05.jpg" class = "lightzoom">04-05</a></td><td>Ночные твари - Castlevania (Netflix TV) - Alucard Tepes, Lisa Tepes, Sypha Belnades, Trevor Belmont (Уфа)</td></tr>
+<tr class="B"><td>12:45</td><td>Вокал и cover dance</td></tr>
+	<tr><td>05-01</td><td>"Makitty - Kafu Phony (Уфа)</td></tr>
+	<tr><td><a href="card/05-02.jpg" class = "lightzoom">05-02</a></td><td>ENLIVEN - Treasure - JIKJIN (Ижевск)</td></tr>
+	<tr><td><a href="card/05-03.jpg" class = "lightzoom">05-03</a></td><td>N_Jay - Dreamcatcher - Good night (Уфа)</td></tr>
+	<tr><td><a href="card/05-04.jpg" class = "lightzoom">05-04</a></td><td>GOTTA MOVE feat O.M.G & K-POP UFA FANDO M- ATEEZ - CRAZY FORM (Уфа)</td></tr>
+<tr class="B"><td>13:00</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/06-01.jpg" class = "lightzoom">06-01</a></td><td>Fun4 - Hellsing Ultimate - Вампир Alucard (Москва)</td></tr>
+	<tr><td><a href="card/06-02.jpg" class = "lightzoom">06-02</a></td><td>LOWELL - Paradox Live - Nayuta Yatonokami (Новокуйбышевск)</td></tr>
+	<tr><td><a href="card/06-03.jpg" class = "lightzoom">06-03</a></td><td>Ball ghost - Mo Dao Zu Shi - Бася (Екатеринбург)</td></tr>
+	<tr><td><a href="card/06-04.jpg" class = "lightzoom">06-04</a></td><td>Канифоль - Добро пожаловать в ад Ирума-кун - Элизабетт Икс (Уфа)</td></tr>
+	<tr><td><a href="card/06-05.jpg" class = "lightzoom">06-05</a></td><td>Nora Kim - Cardfight!! Vanguard - Dream-spinning Ranunculus, Ahsha (Уфа)</td></tr>
+	<tr><td><a href="card/06-06.jpg" class = "lightzoom">06-06</a></td><td>Inu - Immortal Soul: Black Survival - Киара (Казань)</td></tr>
+	<tr><td><a href="card/06-07.jpg" class = "lightzoom">06-07</a></td><td>Binderella - Dead by Daylight - Художница (Челябинск)</td></tr>
+	<tr><td><a href="card/06-08.jpg" class = "lightzoom">06-08</a></td><td>Meigara - Genshin Impact - Albedo (Самара)</td></tr>
+	<tr><td><a href="card/06-09.jpg" class = "lightzoom">06-09</a></td><td>TsubakiFudzioka - Genshin Impact - Pyro Abyss Mage (Екатеринбург)</td></tr>
+<tr class="B"><td>13:05</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/07-01.jpg" class = "lightzoom">07-01</a></td><td>Татарский Шиппуден - Наруто - Наруто Удзумаки, Какаши Хатаке, Цунаде (Уфа)</td></tr>
+	<tr><td><a href="card/07-02.jpg" class = "lightzoom">07-02</a></td><td>трое из made in China - Благословение небожителей - Собиратель цветов под кровавым дождем Хуа Чэн, Черная вода погибель кораблей Хэ Сюань, Несущий беду в белых одеяниях Безликий Бай (Уфа)</td></tr>
+	<tr><td><a href="card/07-03.jpg" class = "lightzoom">07-03</a></td><td>Биба и Боба - Sailor Moon - Темная Леди, Мистресс 9 (Екатеринбург)</td></tr>
+	<tr><td><a href="card/07-04.jpg" class = "lightzoom">07-04</a></td><td>Крабовый саботаж - Дисней - Белоснежка, Аврора (Пермь)</td></tr>
+	<tr><td><a href="card/07-05.jpg" class = "lightzoom">07-05</a></td><td>Театр Теней - Ориджинал: вампирские хроники Викторианской эпохи - Сын-вампир Луи, мать-вампир Лилит, невинная дева Офелия (Екатеринбург)</td></tr>
+	<tr><td><a href="card/07-06.jpg" class = "lightzoom">07-06</a></td><td>Всё ради игры. Петухи и собаки. - Книга ""Всё ради игры"" (Нора Сакавич) - Нил Джостен, Эндрю Миньярд, Рико Морияма, Жан Моро, Кевин Дэй, Аарон Миньярд, Рене Уокер, Николас Хэммик, Элисон Рейнолдс (Уфа, Стерлитамак.)</td></tr>
+	<tr><td><a href="card/07-07.jpg" class = "lightzoom">07-07</a></td><td>Божественный Крысиный Совет - Магия и мускулы - Мэш, Финн, Тодд, Лемон, Ленс (Екатеринбург)</td></tr>
+<th colspan="2" class="smort">13:20 СМОТР Косплей-дефиле 1й блок - 2</th></tr>
+<tr class="B"><td>13:20</td><td>Вокал и cover dance</td></tr>
+	<tr><td>08-01</td><td>Red Thread - Purple kiss – T4ke (Уфа)</td></tr>
+	<tr><td><a href="card/08-02.jpg" class = "lightzoom">08-02</a></td><td>WHIPLASH - SOMI - FAST FORWARD (Пермь)</td></tr>
+	<tr><td><a href="card/08-03.jpg" class = "lightzoom">08-03</a></td><td>КИТРИ - Green Apelsin - Труп невесты (Уфа)</td></tr>
+	<tr><td><a href="card/08-04.jpg" class = "lightzoom">08-04</a></td><td>VEELA ft. CNP Team - Aespa - Drama (Уфа)</td></tr>
+<th colspan="2" class="block">Перерыв 40 минут</th></tr>
+	<tr><td>09</td><td>Интерактив от Телеканала СУМИКО</td></tr>
+<th colspan="2" class="block">2-ый блок</th></tr>
+<th colspan="2" class="smort">14:15 СМОТР Косплей-дефиле 2й блок - 1</th></tr>
+<tr class="B"><td>14:20</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/10-01.jpg" class = "lightzoom">10-01</a></td><td>MEI SHU - P1Harmony - Killin' It (Стерлитамак)</td></tr>
+	<tr><td>10-02</td><td>"Harune - Sunmi - Tail (Уфа)</td></tr>
+	<tr><td><a href="card/10-03.jpg" class = "lightzoom">10-03</a></td><td>ENLIVEN - NCT 127 - Fact Check (Ижевск)</td></tr>
+	<tr><td><a href="card/10-04.jpg" class = "lightzoom">10-04</a></td><td>ZipZip - NCT 127-Kick It (Уфа)</td></tr>
+	<tr><td><a href="card/10-05.jpg" class = "lightzoom">10-05</a></td><td>BlueredPride - Endless Possibility (Sonic Unleashed) (Санкт-Петербург)</td></tr>
+<tr class="B"><td>14:40</td><td>Специальный гость</td></tr>
+	<tr><td>11</td><td>Интерактив со спец. гостем - Исламом Ганджаевым</td></tr>
+<tr class="B"><td>14:50</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/12-01.jpg" class = "lightzoom">12-01</a></td><td>Shiku - Sousou no Frieren - Frieren (Уфа)</td></tr>
+	<tr><td><a href="card/12-02.jpg" class = "lightzoom">12-02</a></td><td>Мисако - Vocaloid - Hatsune Miku (Уфа)</td></tr>
+	<tr><td><a href="card/12-03.jpg" class = "lightzoom">12-03</a></td><td>Риколлетти - Благословение Небожителей - Ши Цинсюань (Уфа)</td></tr>
+	<tr><td><a href="card/12-04.jpg" class = "lightzoom">12-04</a></td><td>Shanmei - Звёздное дитя - Арима Кана (Уфа)</td></tr>
+	<tr><td><a href="card/12-05.jpg" class = "lightzoom">12-05</a></td><td>pechenie - Vocaloid - Senbonzakura Rin (Стерлитамак)</td></tr>
+	<tr><td><a href="card/12-06.jpg" class = "lightzoom">12-06</a></td><td>Reiz - Honkai: Star Rail - Яньцин (Уфа)</td></tr>
+	<tr><td><a href="card/12-07.jpg" class = "lightzoom">12-07</a></td><td>Batsy - Honkai: Star Rail - Клара (Екатеринбург)</td></tr>
+	<tr><td><a href="card/12-08.jpg" class = "lightzoom">12-08</a></td><td>Valli - Genshin Impact - Фокалорс (Пермь)</td></tr>
+	<tr><td><a href="card/12-09.jpg" class = "lightzoom">12-09</a></td><td>Verukt - Genshin impact - Sangonomiya Kokomi (Уфа)</td></tr>
+	<tr><td><a href="card/12-10.jpg" class = "lightzoom">12-10</a></td><td>Set Skandanest - Genshin impact - Zhongli (Новосибирск)</td></tr>
+	<tr><td><a href="card/12-11.jpg" class = "lightzoom">12-11</a></td><td>Kenjik - Звёздные цветы - Барвинок (Екатеринбург)</td></tr>
+	<tr><td><a href="card/12-12.jpg" class = "lightzoom">12-12</a></td><td>sterrzer - Dragon Nest - Black Mara (Ижевск)</td></tr>
+	<tr><td><a href="card/12-13.jpg" class = "lightzoom">12-13</a></td><td>Evergreen_de_Bestia - Ориджинал - Вампир - Графиня Мак (Уфа)</td></tr>
+	<tr><td><a href="card/12-14.jpg" class = "lightzoom">12-14</a></td><td>moon_pers - Невероятные приключения ДжоДжо - фем!Дио Брандо (Уфа)</td></tr>
+<tr class="B"><td>15:00</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/13-01.jpg" class = "lightzoom">13-01</a></td><td>NeroYamato, Kyarov - JoJo’s Bizarre Adventure - Joseph Joestar, Lisa Lisa (Уфа)</td></tr>
+	<tr><td><a href="card/13-02.jpg" class = "lightzoom">13-02</a></td><td>Dante, Mr.Oysen - Мультсериал ""Wunschpunsch"" - Бубоник, Тирания (Уфа, Чебоксары)</td></tr>
+	<tr><td><a href="card/13-03.jpg" class = "lightzoom">13-03</a></td><td>Синнабон и Рыжий Змей - ""Good omens"" (""Благие знамения"") - Азирафель, Кроули (фем-версия) (Уфа)</td></tr>
+<tr class="B"><td>15:10</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/14-01.jpg" class = "lightzoom">14-01</a></td><td>Coffee Glass feat O.M.G - Omega X - Love me like (Уфа)</td></tr>
+	<tr><td><a href="card/14-02.jpg" class = "lightzoom">14-02</a></td><td>Asphodel - Itzy - Untouchable (Ижевск)</td></tr>
+	<tr><td><a href="card/14-03.jpg" class = "lightzoom">14-03</a></td><td>YBN feat. KIDERO - Purple Kiss — Sweet Juice (Уфа)</td></tr>
+	<tr><td>14-04</td><td>"AV - Key - Killer (Ижевск)</td></tr>
+<tr class="B"><td>15:30</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/15-01.jpg" class = "lightzoom">15-01</a></td><td>Fay - League of Legends - Briar (Пермь)</td></tr>
+	<tr><td><a href="card/15-02.jpg" class = "lightzoom">15-02</a></td><td>KioretoSan - League of Legends - Muse Sona (Уфа)</td></tr>
+	<tr><td><a href="card/15-03.jpg" class = "lightzoom">15-03</a></td><td>AnA - Baldur's Gate 3 - Астарион (Пенза)</td></tr>
+	<tr><td><a href="card/15-04.jpg" class = "lightzoom">15-04</a></td><td>Rinoko - Snow White and the Seven Dwarfs - Snow White (Уфа)</td></tr>
+	<tr><td><a href="card/15-05.jpg" class = "lightzoom">15-05</a></td><td>SHINIGAMka - Сериал ""Аватар: Легенда об Аанге"" - Суюки, воин Киоши (Соликамск)</td></tr>
+	<tr><td><a href="card/15-06.jpg" class = "lightzoom">15-06</a></td><td>Kvoni Min - Ориджинал по вселенной Алисы в стране чудес - Белая Роза (Уфа)</td></tr>
+<tr class="B"><td>15:35</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/16-01.jpg" class = "lightzoom">16-01</a></td><td>harat, мама Аникоса - Очень приятно Бог - Томоэ,Нанами (Уфа)</td></tr>
+	<tr><td><a href="card/16-02.jpg" class = "lightzoom">16-02</a></td><td>Лис Укурыш, Radioactive Daddy - The Elder Scrolls V:Skyrim - Довакин, Мирак (Челябинск)</td></tr>
+	<tr><td><a href="card/16-03.jpg" class = "lightzoom">16-03</a></td><td>Юма, Хлопок - Геншин импакт - Дотторе, Колумбина (Уфа)</td></tr>
+	<tr><td><a href="card/16-04.jpg" class = "lightzoom">16-04</a></td><td>Потешные хтони - Arknights - Irene, Lumen, Specter the Unchained (Уфа, Ижевск, Казань)</td></tr>
+	<tr><td><a href="card/16-05.jpg" class = "lightzoom">16-05</a></td><td>Polina Chrome, Mikkel - Resident Evil 4 Remake - Ada Wong, Leon Scott Kennedy (Уфа)</td></tr>
+	<tr><td><a href="card/16-06.jpg" class = "lightzoom">16-06</a></td><td>mariamiaou & Renton Torston - One-Punch Man - Tatsumaki, Fubuki (Пермь)</td></tr>
+	<tr><td><a href="card/16-07.jpg" class = "lightzoom">16-07</a></td><td>Собрание высших лун - Клинок, рассекающий демонов - Кибусуджи Мудзан, Накиме, Кокушибо, Доума, Аказа, Хонтенгу, Гекко, Гютаро, Даки (Уфа, Набережные челны, Челябинск)</td></tr>
+	<tr><td><a href="card/16-08.jpg" class = "lightzoom">16-08</a></td><td>Суета в столовке - My little pony - Рарити, Флаттершай, Эпл Джек, Пинки Пай, Радуга Дэш, Сумеречная Искорка (Уфа)</td></tr>
+<th colspan="2" class="smort">15:50 СМОТР Косплей-дефиле 2й блок - 2</th></tr>
+<tr class="B"><td>15:50</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/17-01.jpg" class = "lightzoom">17-01</a></td><td>WHIPLASH - VIXX - FANTASY (Пермь)</td></tr>
+	<tr><td><a href="card/17-02.jpg" class = "lightzoom">17-02</a></td><td>BLACK MOON - NCT DREAM - ISTJ (Набережные Челны)</td></tr>
+	<tr><td>17-03</td><td>YuuSol - Wakeshima Kanon – Suna no oshiro (Уфа)</td></tr>
+	<tr><td><a href="card/17-04.jpg" class = "lightzoom">17-04</a></td><td>GO CRAZY! - Intro+Everglow-La Di Da (Стерлитамак)</td></tr>
+	<tr><td><a href="card/17-05.jpg" class = "lightzoom">17-05</a></td><td>Cloud Nine - PURPLE KISS - Sweet Juice (Уфа)</td></tr>
+	<tr><td><a href="card/17-06.jpg" class = "lightzoom">17-06</a></td><td>QUINTESSENCE feat. X1 - (G)I-DLE - Super Lady (Уфа)</td></tr>
+<tr class="B"><td>16:15</td><td>Специальный гость</td></tr>
+	<tr><td>18</td><td>Вопрос-ответ со спец. гостем - Чабби</td></tr>
+<th colspan="2" class="block">Перерыв 40 минут</th></tr>
+<th colspan="2" class="smort">17:05 СМОТР Косплей-дефиле 3й блок - 1</th></tr>
+<th colspan="2" class="block">3 блок</th></tr>
+<tr class="B"><td>17:15</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/19-01.jpg" class = "lightzoom">19-01</a></td><td>Milkshake - Itzy - Untouchable (Уфа)</td></tr>
+	<tr><td><a href="card/19-02.jpg" class = "lightzoom">19-02</a></td><td>2TERNITY - STRAY KIDS - EASY (Ижевск)</td></tr>
+	<tr><td><a href="card/19-03.jpg" class = "lightzoom">19-03</a></td><td>Gotta Move - Pixy - Addicted (Уфа)</td></tr>
+	<tr><td>19-04</td><td>me - Demi Lovato ft. Joe Jonas - This Is Me (Челябинск)</td></tr>
+	<tr><td><a href="card/19-05.jpg" class = "lightzoom">19-05</a></td><td>BAEby - 8TURN - EXCEL (Пермь)</td></tr>
+<tr class="B"><td>17:35</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/20-01.jpg" class = "lightzoom">20-01</a></td><td>Dary - Food Fantasy - Red Wine (Ульяновск)</td></tr>
+	<tr><td><a href="card/20-02.jpg" class = "lightzoom">20-02</a></td><td>Жоски Кичи - Project sekai - Emu Otori (Уфа)</td></tr>
+	<tr><td><a href="card/20-03.jpg" class = "lightzoom">20-03</a></td><td>BlakEva - Reverse Falls (Gravity Falls) - Mabel Gleeful (Mabel Pines) (Уфа)</td></tr>
+	<tr><td><a href="card/20-04.jpg" class = "lightzoom">20-04</a></td><td>Biomega - Дорама ""Благой Лотосовый Терем"" - Ли Сяньи (Екатеринбург)</td></tr>
+	<tr><td><a href="card/20-05.jpg" class = "lightzoom">20-05</a></td><td>Coraline.Winter - Сказка о сахарном яблоке - Бриджит Пейдж (Уфа)</td></tr>
+	<tr><td><a href="card/20-06.jpg" class = "lightzoom">20-06</a></td><td>Yukine - Магическая битва - Маки Зенин (Уфа)</td></tr>
+	<tr><td><a href="card/20-07.jpg" class = "lightzoom">20-07</a></td><td>Eclipse - Hellsing Ultimate - Майор Монтана (Уфа)</td></tr>
+	<tr><td><a href="card/20-08.jpg" class = "lightzoom">20-08</a></td><td>Levian - Основатель Темного Пути - Юй Цзыюань (Пермь)</td></tr>
+	<tr><td><a href="card/20-09.jpg" class = "lightzoom">20-09</a></td><td>Хомяк умер от кринжа - Vocaloid - Hatsune Miku (Челябинск)</td></tr>
+	<tr><td><a href="card/20-10.jpg" class = "lightzoom">20-10</a></td><td>Staaaaaaaaaaark - One Piece - Сэр Крокодайл (Челябинск)</td></tr>
+<tr class="B"><td>17:45</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/21-01.jpg" class = "lightzoom">21-01</a></td><td>Кица, Mami - Evangelion OVA - Аска Лэнгли, Мари Макинами (Уфа)</td></tr>
+	<tr><td><a href="card/21-04.jpg" class = "lightzoom">21-04</a></td><td>It's Fine - Hikikomari Kyuuketsuki no Monmon - Теракомари Гандесблад, Вилзейз (Уфа)</td></tr>
+	<tr><td><a href="card/21-05.jpg" class = "lightzoom">21-05</a></td><td>Principle F - Paradox Live - Kanata Yatonokami, Nayuta Yatonokami (Самара, Новокуйбышевск)</td></tr>
+	<tr><td><a href="card/21-07.jpg" class = "lightzoom">21-07</a></td><td>Mako, ContraMundi - Castlevania: Lament of Innocence - Leon Belmont, Mathias Cronqvist (Москва)</td></tr>
+<tr class="B"><td>17:55</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/22-01.jpg" class = "lightzoom">22-01</a></td><td>WHITE NIGHT - XG - Shooting star (Уфа)</td></tr>
+	<tr><td><a href="card/22-02.jpg" class = "lightzoom">22-02</a></td><td>MBL(MaturBoysLar) - NCT U-Baggy Jeans (Уфа)</td></tr>
+	<tr><td><a href="card/22-03.jpg" class = "lightzoom">22-03</a></td><td>X1 - NCT127 - Favorite (Vampire) (Уфа)</td></tr>
+<tr class="B"><td>18:05</td><td>Одиночное дефиле</td></tr>
+	<tr><td><a href="card/23-01.jpg" class = "lightzoom">23-01</a></td><td>Shafran - Hazbin Hotel - Angel Dust (Уфа)</td></tr>
+	<tr><td><a href="card/23-02.jpg" class = "lightzoom">23-02</a></td><td>Koruii - Hazbin Hotel - Lute (Пермь)</td></tr>
+	<tr><td><a href="card/23-04.jpg" class = "lightzoom">23-04</a></td><td>The Usurper - Джордж Р. Р. Мартин — ""Пламя и Кровь"" - Эйгон II Таргариен (Туймазы)</td></tr>
+	<tr><td><a href="card/23-05.jpg" class = "lightzoom">23-05</a></td><td>Хоррор на Юнити - Genshin Impact - Lynette (Уфа)</td></tr>
+	<tr><td><a href="card/23-06.jpg" class = "lightzoom">23-06</a></td><td>Gracia - Genshin Impact - Monsieur Neuvillette (Уфа)</td></tr>
+	<tr><td><a href="card/23-07.jpg" class = "lightzoom">23-07</a></td><td>Лама - Клинок рассекающий демонов - Незуко (Уфа)</td></tr>
+	<tr><td><a href="card/23-08.jpg" class = "lightzoom">23-08</a></td><td>Неясыть - Bleach - Kurotsuchi Mayuri (Уфа)</td></tr>
+	<tr><td><a href="card/23-09.jpg" class = "lightzoom">23-09</a></td><td>phantom - Тёмный Дворецкий - Элизабет Мидфорд (Уфа)</td></tr>
+	<tr><td><a href="card/23-10.jpg" class = "lightzoom">23-10</a></td><td>Выбравшая тьму - Sakizo art - Necormancer Julietta (Уфа)</td></tr>
+<tr class="B"><td>18:15</td><td>Малое групповое дефиле</td></tr>
+	<tr><td><a href="card/24-01.jpg" class = "lightzoom">24-01</a></td><td>Ochpochmak from Yuki - The Demon Slayеr - Nezuko, Zenitsu (Салават, Уфа)</td></tr>
+	<tr><td><a href="card/24-02.jpg" class = "lightzoom">24-02</a></td><td>Хор Зайчат - Homestuck - Jade Harley, Dave Strider (Уфа)</td></tr>
+	<tr><td><a href="card/24-03.jpg" class = "lightzoom">24-03</a></td><td>ФантаСтики - Мрачные тени (к/ф 2012) - Анжелика Бушар, Барнабас Коллинз (Челябинск)</td></tr>
+	<tr><td><a href="card/24-04.jpg" class = "lightzoom">24-04</a></td><td>Видит Архонт, мы не хотели! - Genshin Impact - Люмин, Лиза, Розария, Венти, Сахароза, Беннет, Эмбер, Дилюк, Кэйя, Ноэль, Барбара (Уфа, Стерлитамак, Новосибирск)</td></tr>
+	<tr><td><a href="card/24-05.jpg" class = "lightzoom">24-05</a></td><td>Рожденные хаосом - Интервью с вампиром, Королева проклятых, Чем мы заняты в тени, Выживут только любовники, Бал вампиров, Дракула - Лестат де Лионкур, Акаша, Владислав Колосажатель, Ева, Сара Шагал, Владислав Дракула (Екатеринбург)</td></tr>
+<th colspan="2" class="smort">18:25 СМОТР Косплей-дефиле 3й блок - 2</th></tr>
+<tr class="B"><td>18:25</td><td>Вокал и cover dance</td></tr>
+	<tr><td><a href="card/25-01.jpg" class = "lightzoom">25-01</a></td><td>TheMUSES Project - Dreamcatcher - Vision (Уфа)</td></tr>
+	<tr><td><a href="card/25-02.jpg" class = "lightzoom">25-02</a></td><td>Sugarboo - XG-GRL GVNG (Ижевск, Казань)</td></tr>
+	<tr><td><a href="card/25-03.jpg" class = "lightzoom">25-03</a></td><td>Cloud Nine Family - Dreamcatcher - BOCA (Уфа)</td></tr>
+	<tr><td>25-04</td><td>Elizabeth - Christina Aguilera - Something’s Got a Hold On Me (Челябинск)</td></tr>
+	<tr><td><a href="card/25-05.jpg" class = "lightzoom">25-05</a></td><td>"he T.O.P. dance school - Kepler - LVLY (Уфа)</td></tr>
+<tr class="B"><td>18:45</td><td>Антикосплей</td></tr>
+	<tr><td><a href="card/26-01.jpg" class = "lightzoom">26-01</a></td><td>Канифоль - Фильм Круэлла - Круэлла (мусорное платье) (Уфа)</td></tr>
+	<tr><td><a href="card/26-02.jpg" class = "lightzoom">26-02</a></td><td>Jacket, mr. Oysen - Plants vs. Zombies - Горохострел, Зомби с ведром (Чебоксары)</td></tr>
+	<tr><td><a href="card/26-03.jpg" class = "lightzoom">26-03</a></td><td>Баронесса сквад - Реальные упыри (сериал) - Гильермо де ла Круз, Нандор Безжалостный, Лазло Крейвенсворт, Надя, Колин Робинсон (Уфа)</td></tr>
+	<tr><td><a href="card/26-04.jpg" class = "lightzoom">26-04</a></td><td>Редиска - Русская эстрада - Стас Михайлов (Уфа)</td></tr>
+	<tr><td>26-05</td><td>Lessa - DC Universe - Batman (Уфа)</td></tr>
+	<tr><td><a href="card/26-06.jpg" class = "lightzoom">26-06</a></td><td>Malya Seini - благословение небожителей - Ци Жун (Уфа)</td></tr>
+	<tr><td><a href="card/26-07.jpg" class = "lightzoom">26-07</a></td><td>Татарский шиппуден - Три богатыря, Наруто - Тихон, Бабуля (акацуки), конь Юлий, князь киевский (Уфа)</td></tr>
+	<tr><td>26-08</td><td>Те самые три лемура сякимаки - Мадагаскар - Фосса, Король Джулиан, Морт, Морис (Уфа)</td></tr>
+	<tr><td><a href="card/26-09.jpg" class = "lightzoom">26-09</a></td><td>Флюоресценция - Сумерки - Бэлла, Эдвард, Джейкоб, Карлайл (Уфа, Екатеринбург)</td></tr>
+	<tr><td><a href="card/26-10.jpg" class = "lightzoom">26-10</a></td><td>Уфимские упыри - Что мы делаем в тени - Вьяго, Дикон,Владислав, Петер (Уфа)</td></tr>
+<tr class="B"><td>18:55</td><td>Внеконкурс</td></tr>
+	<tr><td><a href="card/27-01.jpg" class = "lightzoom">27</a></td><td>ВНЕКОНКУРС F.L.P. - Jimin - Set me free (Уфа)</td></tr>
+<tr class="B"><td>19:00</td><td>Липсинк шоу</td></tr>
+	<tr><td>28-01</td><td>Lu - Ariana Grande 7 rings (Уфа)</td></tr>
+	<tr><td>28-02</td><td>Other Side - DPR IAN - Don't Go Insane (Уфа)</td></tr>
+	<tr><td>28-04</td><td>Аморальная поддержка - Heathers – Candy store (Уфа)</td></tr>
+	<tr><td>28-05</td><td>TEAM HANAGON - PPAP - pen-pineapple-apple-pen (Чебоксары, Уфа)</td></tr>
+<tr class="B"><td>19:10</td><td>Внеконкурс</td></tr>
+	<tr><td><a href="card/29-01.jpg" class = "lightzoom">29-01</a></td><td>ВНЕКОНКУРС Twinkie - (G)I-dle- nxde (Уфа)</td></tr>
+	<tr><td>29-02</td><td>Gizma - мюзикл "Последнее испытание" - Жертва</td></tr>
+	<tr><td><a href="card/29-03.jpg" class = "lightzoom">29-03</a></td><td>ВНЕКОНКУРС A.T.I - Enhypen given-Taken (Уфа)</td></tr>
+	<tr><td>29-04</td><td>Adele и Afelis - Charlie Puth - Dangerously (Уфа)</td></tr>
+	<tr><td><a href="card/29-05.jpg" class = "lightzoom">29-05</a></td><td>ВНЕКОНКУРС Fluffster - Stayc-Beautiful monster (Ижевск)</td></tr>
+	<tr><td><a href="card/29-06.jpg" class = "lightzoom">29-06</a></td><td>ВНЕКОНКУРС FTS - LE SSERAFIM - ANTIFRAGILE (Уфа) </td></tr>
+	<tr><td><a href="card/29-07.jpg" class = "lightzoom">29-07</a></td><td>ВНЕКОНКУРС FrontRow project - Aespa - Illusion (Уфа)</td></tr>
+     <tr class="B"><th class="block">19:40</th><th class="block">Лотерея</th></tr>
+	 <tr class="B"><th class="block">19:50</th><th class="block">Награждение</th></tr>
+</table></div>
+
+<!--<div id="red" class="tabcontent">
+<div><a href="tel:+7919608-19-69"><img src="help/med.png" alt="МЕДИК"/></a> <a href="tel:+7917744-96-44"><img src="help/tina.png" alt="ВОЛОНТЁРЫ"/></a><a href="tel:+7999132-67-66"><img src="help/sb.png" alt="ОХРАНА"/></a></div>
+</div>-->
+
+<div id="red" class="tabcontent"><style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <table id="dataTable">
+        <thead>
+            <tr>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table></div>
+    
+    
+   <!-- <script src="script.js"></script>-->
+<!--<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>-->
+
+
+<link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+<script type="text/javascript" src="lightzoom/lightzoom.js"></script>
+<script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});</script>
+</body>
+</html>

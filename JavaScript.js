@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const inputFields = document.querySelectorAll('.data-input');
 
     // Функция для загрузки данных из Google Sheets с кешированием
-    async function fetchDataWithCache(sheetName = 'Sheet1') { // Добавили параметр sheetName
+    async function fetchDataWithCache(sheetName = 'Mako') { // Добавили параметр sheetName
         let cachedData = localStorage.getItem(`cachedData_${sheetName}`);
         let cachedTime = localStorage.getItem(`cachedTime_${sheetName}`);
 

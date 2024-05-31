@@ -2,7 +2,7 @@
 
 /*body {background-image: url("Background.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0; font-family: Helvetica, sans-serif; background-color:#495e66;}*/
 /*.background-container {width: 100%; height: 100vh; /* 100% высоты viewport */ /*background-image: url('path/to/your/image.jpg');  background-size: cover;  background-position: center; background-repeat: no-repeat;}*/
-body {background-image: url("Background.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: cover; margin: 0; font-family: Helvetica, sans-serif; background-color: #495e66;height: 100%; background-attachment: fixed;
+body {margin: 0; font-family: Helvetica, sans-serif; background-color: #b5afab;height: 100%; background-attachment: fixed;
             margin: 0;
             padding: 0;}
 
@@ -29,7 +29,6 @@ a {text-decoration: none; color: black;}
 
 
 /*.container .png {width: 50px; height: 50px; border: solid;}*/
-.muzhik{position: fixed; bottom: 0; height:70%;  width:auto; right:5%;}
 .tyan{position: fixed;  bottom: 0; height:70%; width:auto; right:-2%;}
 
 

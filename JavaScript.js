@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
 
         // Если данные в кеше устарели или их нет, обращаемся к API и обновляем кеш
-        const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/128bnCwot_ifFV_B5e1Zxi4VrMLIzGyV4X9iBe7JMJMk/values/${sheetName}!A1:F100?key=AIzaSyCYgExuxs0Kme9-tWRCsz4gVD9yRjHY74g`);
+        const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/128bnCwot_ifFV_B5e1Zxi4VrMLIzGyV4X9iBe7JMJMk/values/${sheetName}!A1:F118?key=AIzaSyCYgExuxs0Kme9-tWRCsz4gVD9yRjHY74g`);
         const data = await response.json();
 
         // Сохраняем полученные данные и текущее время в кеш
